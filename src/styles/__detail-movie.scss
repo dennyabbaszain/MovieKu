@@ -1,0 +1,26 @@
+.detail-movie {
+  margin: 30px 10px;
+
+  .detail-back {
+    background-color: rgb(99, 183, 255);
+    border-radius: 10px;
+    padding: 7px;
+    transition: all ease 0.35s;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.295));
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      transform: translateY(-3px);
+    }
+  }
+  .img-wrap img {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 400px;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,42 @@
+.movie-item {
+  display: flex;
+  align-self: stretch;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+  border: 2px solid rgb(111, 197, 255);
+  background-color: white;
+  margin: 10px 10px 20px;
+  width: 180px;
+  height: 420px;
+  border-radius: 14px;
+  transition: all ease 0.35s;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.295));
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .img-wrap img {
+    width: 180px;
+    height: 250px;
+    align-items: flex-start;
+    border-radius: 14px 14px 0 0;
+  }
+
+  .about-movie-wrap {
+    padding: 0 10px 10px;
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3; /* number of lines to show */
+      -webkit-box-orient: vertical;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+  }
+}

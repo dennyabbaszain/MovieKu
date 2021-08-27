@@ -1,0 +1,33 @@
+.search-app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+  .search-form {
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.116));
+    height: 30px;
+    border-radius: 14px;
+    border: 1px solid rgb(111, 197, 255);
+    margin-top: 20px;
+  }
+  ::placeholder {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .btn-submit {
+    border-radius: 14px;
+    padding: 6px;
+    border: 1px solid rgb(111, 197, 255);
+    transition: all ease 0.35s;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.116));
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+  }
+}

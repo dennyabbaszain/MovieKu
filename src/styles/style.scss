@@ -1,0 +1,24 @@
+@import url('bootstrap-icons/font/bootstrap-icons.css');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Major+Mono+Display&family=Ubuntu&family=Source+Sans+Pro&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Source Sans Pro';
+  background-color: rgb(236, 236, 236);
+  .container {
+    margin: auto 30px;
+    main div list-popular .list-popular-title {
+      margin-top: 30px;
+    }
+    list-popular-data,
+    list-toprated-data,
+    list-upcoming-data {
+      display: flex;
+      height: 450px;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+    }
+  }
+}

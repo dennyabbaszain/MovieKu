@@ -14,10 +14,6 @@ class Header extends HTMLElement {
           <img src=${logo} alt='logo-web'/>
           <p>MovieKu</p>
           </div>
-          <ul>
-          <li><i class="bi bi-house"></i>Home</li>
-          <li><i class="bi bi-file-person"></i>About</li>
-          </ul>
           </div>     
       </nav>`;
   }

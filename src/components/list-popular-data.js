@@ -2,7 +2,6 @@
 import './movie-item.js';
 
 class ListPopularData extends HTMLElement {
-  // eslint-disable-next-line accessor-pairs
   set dataMovie(data) {
     this._dataMovie = data;
     this.render();
@@ -10,6 +9,10 @@ class ListPopularData extends HTMLElement {
 
   set eventDetail(event) {
     this._eventDetail = event;
+  }
+
+  get loadingRemove() {
+    return document.querySelector('loading-animate').remove();
   }
 
   render() {

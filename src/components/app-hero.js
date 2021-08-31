@@ -8,14 +8,14 @@ class Hero extends HTMLElement {
   render() {
     this.innerHTML = `
     <div class='hero-content'>
-    <div>
+    <div class='hero-img'>
+    <img src=${heroImg} alt='hero-image'/>
     </div>
-        <img src=${heroImg} alt='hero-image'/>
         <div>
         <p>Ingin menonton apa hari ini? bingung? </p>
         <p>Mari kita cari disini &smile;</p>
         <p>disini banyak sekali film untuk dijadikan referensi menonton</p>
-        <button class='btn-hero'> lihat film <i class="bi bi-arrow-down-circle-fill"></i></button>
+        <button class='btn-hero'><a href='#list-film'> lihat film <i class="bi bi-arrow-down-circle-fill"></i></a></button>
         </div>
     </div>`;
   }

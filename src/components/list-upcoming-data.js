@@ -1,14 +1,12 @@
-// import '../styles/__list-popular-data.scss';
+/* eslint-disable accessor-pairs */
 import './movie-item.js';
 
 class ListUpcomingData extends HTMLElement {
-  // eslint-disable-next-line accessor-pairs
   set dataMovie(data) {
     this._dataMovie = data;
     this.render();
   }
 
-  // eslint-disable-next-line accessor-pairs
   set eventDetail(event) {
     this._eventDetail = event;
   }

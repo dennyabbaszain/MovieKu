@@ -1,14 +1,14 @@
+/* eslint-disable accessor-pairs */
 /* eslint-disable camelcase */
 import '../styles/__movie-item.scss';
+import notFoundImg from '../public/not-found.png';
 
 class MovieItem extends HTMLElement {
-  // eslint-disable-next-line accessor-pairs
   set dataMovie(data) {
     this._dataMovie = data;
     this.render();
   }
 
-  // eslint-disable-next-line accessor-pairs
   set eventDetail(event) {
     this._eventDetail = event;
   }
@@ -19,13 +19,17 @@ class MovieItem extends HTMLElement {
     this.innerHTML = `
     <div class='movie-item'>
       <div class='img-wrap'>
-        <img src='https://image.tmdb.org/t/p/w500/${poster_path}' alt='thumb'/>
+        <img src=${
+          poster_path == null
+            ? notFoundImg
+            : `https://image.tmdb.org/t/p/w500${poster_path}`
+        } alt='thumb'/>
       </div>
       <div class='about-movie-wrap'>
         <h3>${title}</h3>
         <h4><i class="bi bi-star-fill"></i> ${vote_average}</h4>
-        <p>Release : ${release_date}</p>
-        <p>${overview} </p>
+        <p>Release : ${release_date === '' ? 'none' : release_date}</p>
+        <p>${overview === '' ? 'none overview' : overview} </p>
       </div>
     </div>`;
 

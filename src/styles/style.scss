@@ -4,6 +4,9 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Source Sans Pro';
   background-color: rgb(236, 236, 236);
@@ -14,11 +17,41 @@ body {
     }
     list-popular-data,
     list-toprated-data,
-    list-upcoming-data {
+    list-upcoming-data,
+    .result-search-success {
       display: flex;
-      height: 450px;
+      height: 460px;
       overflow-x: auto;
       flex-wrap: nowrap;
+    }
+    result-search {
+      display: none;
+      margin-top: 10px;
+      .img-search-not-found {
+        text-align: center;
+        margin-bottom: 10px;
+        img {
+          width: 360px;
+          height: 360px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    font-size: 20px !important;
+    margin: auto 130px !important;
+
+    list-popular-data,
+    list-toprated-data,
+    list-upcoming-data,
+    .result-search-success {
+      justify-content: center;
+      display: flex;
+      height: auto !important;
+      flex-wrap: wrap !important;
     }
   }
 }

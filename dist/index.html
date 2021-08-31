@@ -8,6 +8,35 @@
     <title>Hello, world!</title>
   <script defer src="bundle.js"></script></head>
   <body>
-    <app-header></app-header>
+    <div class="container">
+      <header>
+        <app-header></app-header>
+      </header>
+      <main>
+        <div>
+          <app-hero></app-hero>
+        </div>
+        <div class="search" id="list-film">
+          <app-search></app-search>
+          <result-search></result-search>
+        </div>
+        <div class="popular">
+          <list-popular></list-popular>
+          <list-popular-data> </list-popular-data>
+          <movie-item></movie-item>
+        </div>
+        <div class="toprated">
+          <list-toprated></list-toprated>
+          <list-toprated-data></list-toprated-data>
+        </div>
+        <div class="upcoming">
+          <list-upcoming></list-upcoming>
+          <list-upcoming-data></list-upcoming-data>
+        </div>
+      </main>
+      <footer>
+        <app-footer></app-footer>
+      </footer>
+    </div>
   </body>
 </html>

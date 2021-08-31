@@ -1,7 +1,6 @@
 /* eslint-disable space-before-function-paren */
 /* eslint-disable import/extensions */
 import 'regenerator-runtime';
-import axios from 'axios';
 import './styles/style.scss';
 import './components/app-header.js';
 import './components/app-footer.js';
@@ -16,6 +15,7 @@ import './components/list-upcoming-data.js';
 import './components/result-search.js';
 import './components/detail-movie.js';
 import './components/loading.js';
+import axios from 'axios';
 
 class MovieApp {
   constructor() {

@@ -16,7 +16,7 @@ Aplikasi web untuk mencari film yang dibuat menggunakan Web Component dari Vanil
 
 
 ## Live Demo
-(https://moviekudznx.netlify.app/)
+(https://movieku-dznx.netlify.app/)
 
 ## Thanks to TMDB
  API (https://www.themoviedb.org/documentation/api)
